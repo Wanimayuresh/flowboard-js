@@ -42,27 +42,51 @@
                 </div>
             </section>
 
-
-              <section class="column" data-status="done">
-                <header class="column-header">
-                    <h2>Done</h2>
-                    <span>0</span>
-                </header>
-                <div class="task-list">
-                <!-- tasks will render here later -->
-                </div>
-            </section>
-              <section class="column" data-status="done">
-                <header class="column-header">
-                    <h2>Done</h2>
-                    <span>0</span>
-                </header>
-                <div class="task-list">
-                <!-- tasks will render here later -->
-                </div>
-            </section>
             
         </div>
+<!-- Task Details Modal -->
+<div id="task-modal" class="modal">
+  <div class="modal-content">
+    <h2>Edit Task</h2>
+    <input type="text" id="task-title" placeholder="Title" />
+    <textarea id="task-desc" placeholder="Description"></textarea>
+    <select id="task-priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <select id="task-status">
+      <option value="todo">Todo</option>
+      <option value="progress">In Progress</option>
+      <option value="done">Done</option>
+    </select>
+    <div class="modal-buttons">
+      <button id="save-task">Save</button>
+      <button id="close-task-modal">Cancel</button>
+      <button style="background-color: brown;" id="delete-task">Delete</button>
+    </div>
+  </div>
+</div>
+
+<!-- Add Task Modal -->
+<div id="add-task-modal" class="modal">
+  <div class="modal-content">
+    <h2>Add Task</h2>
+    <input type="text" id="add-task-title" placeholder="Title" />
+    <input type="text" id="add-task-desc" placeholder="Description"/>
+    <select id="add-task-priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+    <div class="modal-buttons">
+      <button id="add-task-save">Save</button>
+      <button id="add-task-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+
     </main>
 </body>
+<script type="module" src="main.js"></script>
 </html>
