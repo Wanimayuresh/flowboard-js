@@ -218,3 +218,48 @@ button:disabled,
   font-size: 20px;
   cursor: pointer;
 }
+
+/* Empty  Board */
+.empty-board {
+  text-align: center;
+  padding: 80px 20px;
+  color: #666;
+}
+
+.empty-board h2 {
+  margin-bottom: 8px;
+}
+
+.empty-board button {
+  margin-top: 16px;
+  padding: 10px 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.empty-column {
+  font-size: 14px;
+  color: #aaa;
+  padding: 12px;
+  text-align: center;
+}
+
+/* drag and Drop */
+.dragging {
+  opacity: 0.5;
+  transform: scale(0.98);
+  cursor: grabbing;
+}
+
+.drag-over {
+  outline: 2px dashed var(--accent);
+  outline-offset: -6px;
+  background-color: rgba(59, 130, 246, 0.08);
+}
+.task {
+  cursor: grab;
+}
+
+.task:active {
+  cursor: grabbing;
+}
